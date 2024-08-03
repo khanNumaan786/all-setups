@@ -1,6 +1,4 @@
 #STEP-1: INSTALLING GIT JAVA-1.8.0 MAVEN 
-sudo yum install java-1.8.0-amazon-corretto.x86_64
-
 yum install git java-1.8.0-openjdk maven -y
 
 #STEP-2: GETTING THE REPO (jenkins.io --> download -- > redhat)
@@ -28,3 +26,7 @@ sudo yum install jenkins -y
 systemctl status jenkins.service
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
+
+For Maven
+yum install java-1.8.0-amazon-corretto-devel
+yum install maven 
