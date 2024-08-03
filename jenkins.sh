@@ -15,3 +15,16 @@ update-alternatives --config java
 #STEP-4: RESTARTING JENKINS (when we download service it will on stopped state)
 systemctl start jenkins.service
 systemctl status jenkins.service
+
+
+For Jenkins 
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+sudo dnf install java-17-amazon-corretto-devel
+java --version
+sudo yum install jenkins -y
+
+systemctl status jenkins.service
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
