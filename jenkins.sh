@@ -1,3 +1,4 @@
+sudo dnf install java-1.8.0-amazon-corretto
 #STEP-1: INSTALLING GIT JAVA-1.8.0 MAVEN 
 yum install git java-1.8.0-openjdk maven -y
 
